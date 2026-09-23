@@ -7,6 +7,9 @@ import FoodDetail from "./components/food/FoodDetail";
 import BoardList from "./components/board/BoardList";
 import BoardInsert from "./components/board/BoardInsert";
 import BoardDetail from "./components/board/BoardDetail";
+import BoardUpdate from "./components/board/BoardUpdate";
+import BoardDelete from "./components/board/BoardDelete";
+import YoutubeFind from "./components/youtube/YoutubeFind";
 
 /*
      TanStack-Query => Next은 변경 사항이 없이 => 구조만 변경
@@ -110,7 +113,10 @@ function App() {
                 <Route path={"/food/detail/:no"} element={<FoodDetail/>}/>
                 <Route path={"/board/list"} element={<BoardList/>}/>
                 <Route path={"/board/insert"} element={<BoardInsert/>}/>
-                <Route path={"/board/detail"} element={<BoardDetail/>}/>
+                <Route path={"/board/detail/:no"} element={<BoardDetail/>}/>
+                <Route path={"/board/update/:no"} element={<BoardUpdate/>}/>
+                <Route path={"/board/delete/:no"} element={<BoardDelete/>}/>
+                <Route path={"/youtube/find"} element={<YoutubeFind />}/>
             </Routes>
             <Footer/>
         </Router>

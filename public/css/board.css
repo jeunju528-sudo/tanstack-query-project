@@ -633,3 +633,64 @@
 .form-cancel-btn:hover {
     background: #e9ebef;
 }
+
+
+/* 버튼들을 감싸는 전체 영역 (양 끝 정렬) */
+.board-detail-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* 수정/삭제 버튼을 감싸는 우측 영역 */
+.board-detail-buttons > div {
+    display: flex;
+    gap: 8px; /* 버튼 간격 */
+}
+
+/* 공통 버튼 스타일 */
+.board-back-btn,
+.board-edit-btn,
+.board-delete-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none; /* 링크 밑줄 제거 */
+    border-radius: 6px;    /* 모서리 둥글게 */
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+/* 목록 버튼 스타일 */
+.board-back-btn {
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+.board-back-btn:hover {
+    background-color: #5a6268;
+}
+
+/* 수정 버튼 스타일 */
+.board-edit-btn {
+    background-color: #0d6efd;
+    color: #ffffff;
+}
+
+.board-edit-btn:hover {
+    background-color: #0b5ed7;
+}
+
+/* 삭제 버튼 스타일 */
+.board-delete-btn {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.board-delete-btn:hover {
+    background-color: #bb2d3b;
+}

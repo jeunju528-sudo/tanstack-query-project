@@ -51,7 +51,7 @@ function Header() {
 
                     <div className="sub-menu">
                         <Link to={"/board/list"}>자유게시판</Link>
-                        <a href="#">챗봇</a>
+                        <Link to={"/youtube/find"}>Youtube 검색</Link>
                     </div>
                 </div>
 
