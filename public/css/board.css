@@ -1,0 +1,635 @@
+/* =========================================================
+   BOARD
+========================================================= */
+
+.board-page {
+    max-width: 1200px;
+}
+
+
+/* =========================================================
+   BOARD SEARCH
+========================================================= */
+
+.board-search {
+    margin-top: 35px;
+}
+
+.board-search-box {
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 6px 7px 6px 20px;
+
+    background: #fff;
+
+    border: 1px solid #e5e9f0;
+
+    border-radius: 14px;
+
+    box-shadow:
+            0 10px 30px
+            rgba(30, 50, 90, 0.06);
+}
+
+.board-search-box span {
+    font-size: 18px;
+}
+
+.board-search-box input {
+    flex: 1;
+
+    border: 0;
+    outline: 0;
+
+    padding: 0 14px;
+
+    font-size: 14px;
+}
+
+.board-search-box button {
+    height: 44px;
+
+    padding: 0 25px;
+
+    border-radius: 10px;
+
+    background: #ff315b;
+
+    color: #fff;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+.board-search-box button:hover {
+    background: #e9274d;
+}
+
+
+/* =========================================================
+   BOARD HEADER
+========================================================= */
+
+.board-header {
+    margin-top: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.board-header > div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.board-header strong {
+    font-size: 21px;
+}
+
+.board-header span {
+    color: #929aaa;
+
+    font-size: 13px;
+}
+
+.board-write-btn {
+    padding: 11px 18px;
+
+    border-radius: 9px;
+
+    background: #172033;
+
+    color: #fff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.board-write-btn:hover {
+    background: #ff315b;
+}
+
+
+/* =========================================================
+   BOARD LIST
+========================================================= */
+
+.board-list {
+    margin-top: 20px;
+
+    overflow: hidden;
+
+    background: #fff;
+
+    border:
+            1px solid
+            #e5e9f0;
+
+    border-radius: 16px;
+
+    box-shadow:
+            0 10px 30px
+            rgba(30, 50, 90, 0.05);
+}
+
+
+/* 목록 헤더 */
+
+.board-list-head,
+.board-list-row {
+    display: grid;
+
+    grid-template-columns:
+        80px
+        1fr
+        120px
+        120px
+        70px;
+
+    align-items: center;
+}
+
+
+/* 헤더 */
+
+.board-list-head {
+    min-height: 52px;
+
+    background: #f8f9fb;
+
+    border-bottom:
+            1px solid
+            #e8ebf0;
+
+    color: #667085;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-align: center;
+}
+
+
+/* 행 */
+
+.board-list-row {
+    min-height: 68px;
+
+    border-bottom:
+            1px solid
+            #edf0f4;
+
+    color: #667085;
+
+    font-size: 13px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition:
+            background 0.2s ease;
+}
+
+.board-list-row:last-child {
+    border-bottom: 0;
+}
+
+.board-list-row:hover {
+    background: #fff7f9;
+}
+
+
+/* 번호 */
+
+.board-no {
+    text-align: center;
+}
+
+
+/* 제목 */
+
+.board-list-row .board-title {
+    padding: 0 20px;
+
+    color: #273044;
+
+    text-align: left;
+}
+
+.board-list-row .board-title strong {
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.board-list-row:hover .board-title strong {
+    color: #ff315b;
+}
+
+
+/* 작성자 */
+
+.board-writer {
+    text-align: center;
+}
+
+
+/* 날짜 */
+
+.board-date {
+    text-align: center;
+
+    color: #929aaa;
+}
+
+
+/* 조회 */
+
+.board-hit {
+    text-align: center;
+
+    color: #929aaa;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.board-empty {
+    margin-top: 20px;
+
+    padding: 70px 20px;
+
+    background: #fff;
+
+    border:
+            1px solid
+            #e5e9f0;
+
+    border-radius: 16px;
+
+    color: #929aaa;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   BOARD DETAIL
+========================================================= */
+
+.board-detail {
+    margin-top: 45px;
+
+    background: #fff;
+
+    border:
+            1px solid
+            #e5e9f0;
+
+    border-radius: 20px;
+
+    box-shadow:
+            0 10px 35px
+            rgba(30, 50, 90, 0.06);
+
+    overflow: hidden;
+}
+
+
+/* 제목 */
+
+.board-detail-title {
+    padding: 32px 35px;
+
+    border-bottom:
+            1px solid
+            #edf0f4;
+}
+
+.board-detail-title h2 {
+    font-size: 24px;
+
+    color: #172033;
+
+    letter-spacing: -0.8px;
+}
+
+.board-detail-info {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-top: 18px;
+
+    color: #929aaa;
+
+    font-size: 12px;
+}
+
+.board-detail-info strong {
+    color: #555f70;
+}
+
+
+/* 본문 */
+
+.board-detail-content {
+    min-height: 400px;
+
+    padding: 40px 35px;
+
+    color: #555f70;
+
+    font-size: 14px;
+
+    line-height: 2;
+
+    white-space: pre-line;
+}
+
+.board-detail-content p {
+    min-height: 24px;
+}
+
+
+/* =========================================================
+   PREV NEXT
+========================================================= */
+
+.board-prev-next {
+    border-top:
+            1px solid
+            #edf0f4;
+
+    border-bottom:
+            1px solid
+            #edf0f4;
+}
+
+.board-prev-next > div {
+    min-height: 58px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 0 35px;
+
+    cursor: pointer;
+}
+
+.board-prev-next > div + div {
+    border-top:
+            1px solid
+            #edf0f4;
+}
+
+.board-prev-next > div:hover {
+    background: #fafbfc;
+}
+
+.board-prev-next span {
+    width: 55px;
+
+    color: #929aaa;
+
+    font-size: 12px;
+}
+
+.board-prev-next strong {
+    color: #555f70;
+
+    font-size: 13px;
+
+    font-weight: 500;
+}
+
+.board-prev-next > div:hover strong {
+    color: #ff315b;
+}
+
+
+/* =========================================================
+   DETAIL BUTTON
+========================================================= */
+
+.board-detail-buttons {
+    padding: 25px 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.board-detail-buttons > div {
+    display: flex;
+
+    gap: 8px;
+}
+
+.board-detail-buttons button {
+    padding: 11px 18px;
+
+    border-radius: 9px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.board-back-btn {
+    background: #ff315b;
+
+    color: #fff;
+}
+
+.board-back-btn:hover {
+    background: #e9274d;
+}
+
+.board-edit-btn {
+    background: #f3f4f7;
+
+    color: #555f70;
+}
+
+.board-delete-btn {
+    background: #fff0f2;
+
+    color: #ff315b;
+}
+
+.board-edit-btn:hover {
+    background: #e9ebef;
+}
+
+.board-delete-btn:hover {
+    background: #ffe2e7;
+}
+
+
+/* =========================================================
+   COMMENT
+========================================================= */
+
+.board-comment {
+    margin-top: 30px;
+
+    padding: 30px;
+}
+.board-form {
+    margin-top: 30px;
+
+    padding: 35px;
+
+    background: #fff;
+
+    border: 1px solid #e5e9f0;
+
+    border-radius: 16px;
+
+    box-shadow:
+            0 10px 30px
+            rgba(30, 50, 90, 0.05);
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #273044;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 14px 16px;
+
+    border: 1px solid #e1e5eb;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background: #fff;
+
+    color: #273044;
+
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.form-group input {
+    height: 48px;
+}
+
+.form-group textarea {
+    min-height: 250px;
+
+    resize: vertical;
+
+    line-height: 1.7;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff315b;
+
+    box-shadow:
+            0 0 0 3px
+            rgba(255, 49, 91, 0.08);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a0a6b2;
+}
+
+
+/* 버튼 */
+
+.board-form-buttons {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 8px;
+
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #edf0f4;
+}
+
+.board-form-buttons button {
+    height: 44px;
+
+    padding: 0 20px;
+
+    border: 0;
+
+    border-radius: 9px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.form-submit-btn {
+    background: #ff315b;
+
+    color: #fff;
+}
+
+.form-submit-btn:hover {
+    background: #e9274d;
+}
+
+.form-cancel-btn {
+    background: #f3f4f7;
+
+    color: #555f70;
+}
+
+.form-cancel-btn:hover {
+    background: #e9ebef;
+}
